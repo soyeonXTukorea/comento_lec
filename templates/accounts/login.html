@@ -17,8 +17,8 @@
 {% csrf_token %}
 <table>
 <tr>
-   <td>{{ form.username.label_tag }}</td>
-   <td>{{ form.username }}</td>
+    <td>{{ form.username.label_tag }}</td>
+    <td>{{ form.username }}</td>
 </tr>
 <tr>
     <td>{{ form.password.label_tag }}</td>
@@ -26,9 +26,9 @@
 </tr>
 </table>
 
-  <input type="submit" value="login">
-  </form>
-  <a href="{% url 'accounts:signup' %}">signup</a>
-  {% endblock %}
+<input type="submit" value="login">
+</form>
+<a href="{% url 'accounts:signup' %}">signup</a>
+{% endblock %}
 </body>
 </html>
